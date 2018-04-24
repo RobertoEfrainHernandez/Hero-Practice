@@ -12,9 +12,15 @@
 		577CC5D6208EB80300369EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577CC5D4208EB80300369EF8 /* Main.storyboard */; };
 		577CC5D8208EB80400369EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577CC5D7208EB80400369EF8 /* Assets.xcassets */; };
 		577CC5DB208EB80400369EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577CC5D9208EB80400369EF8 /* LaunchScreen.storyboard */; };
+		577CC5E3208EBE3700369EF8 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC5E2208EBE3700369EF8 /* Flower.swift */; };
+		577CC5E5208EBF7C00369EF8 /* FlowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC5E4208EBF7C00369EF8 /* FlowerCell.swift */; };
+		577CC5E7208EC39900369EF8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC5E6208EC39900369EF8 /* ViewController2.swift */; };
+		74C979FB78189B49DE740C6C /* Pods_Hero_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725DC36AFE5CD976B0AEE78A /* Pods_Hero_Practice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AB6FEA762E3DADDB967D342 /* Pods-Hero Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Practice/Pods-Hero Practice.release.xcconfig"; sourceTree = "<group>"; };
+		2CCC1197BD771826085E852A /* Pods-Hero Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Practice/Pods-Hero Practice.debug.xcconfig"; sourceTree = "<group>"; };
 		577CC5CD208EB80300369EF8 /* Hero Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hero Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		577CC5D0208EB80300369EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577CC5D2208EB80300369EF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		577CC5D7208EB80400369EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577CC5DA208EB80400369EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		577CC5DC208EB80400369EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		577CC5E2208EBE3700369EF8 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		577CC5E4208EBF7C00369EF8 /* FlowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerCell.swift; sourceTree = "<group>"; };
+		577CC5E6208EC39900369EF8 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		725DC36AFE5CD976B0AEE78A /* Pods_Hero_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hero_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C979FB78189B49DE740C6C /* Pods_Hero_Practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				577CC5CF208EB80300369EF8 /* Hero Practice */,
 				577CC5CE208EB80300369EF8 /* Products */,
+				75D75B2B61C559F4239F856C /* Pods */,
+				E8D7013035532D43E3211664 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +69,32 @@
 			children = (
 				577CC5D0208EB80300369EF8 /* AppDelegate.swift */,
 				577CC5D2208EB80300369EF8 /* ViewController.swift */,
+				577CC5E6208EC39900369EF8 /* ViewController2.swift */,
+				577CC5E2208EBE3700369EF8 /* Flower.swift */,
+				577CC5E4208EBF7C00369EF8 /* FlowerCell.swift */,
 				577CC5D4208EB80300369EF8 /* Main.storyboard */,
 				577CC5D7208EB80400369EF8 /* Assets.xcassets */,
 				577CC5D9208EB80400369EF8 /* LaunchScreen.storyboard */,
 				577CC5DC208EB80400369EF8 /* Info.plist */,
 			);
 			path = "Hero Practice";
+			sourceTree = "<group>";
+		};
+		75D75B2B61C559F4239F856C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CCC1197BD771826085E852A /* Pods-Hero Practice.debug.xcconfig */,
+				2AB6FEA762E3DADDB967D342 /* Pods-Hero Practice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8D7013035532D43E3211664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				725DC36AFE5CD976B0AEE78A /* Pods_Hero_Practice.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 577CC5DF208EB80400369EF8 /* Build configuration list for PBXNativeTarget "Hero Practice" */;
 			buildPhases = (
+				9F143B3A384A8C8868BB24D4 /* [CP] Check Pods Manifest.lock */,
 				577CC5C9208EB80300369EF8 /* Sources */,
 				577CC5CA208EB80300369EF8 /* Frameworks */,
 				577CC5CB208EB80300369EF8 /* Resources */,
+				08F5A36904E91D0232E412E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +165,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08F5A36904E91D0232E412E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hero Practice/Pods-Hero Practice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hero Practice/Pods-Hero Practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F143B3A384A8C8868BB24D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hero Practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		577CC5C9208EB80300369EF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577CC5E7208EC39900369EF8 /* ViewController2.swift in Sources */,
 				577CC5D3208EB80300369EF8 /* ViewController.swift in Sources */,
 				577CC5D1208EB80300369EF8 /* AppDelegate.swift in Sources */,
+				577CC5E5208EBF7C00369EF8 /* FlowerCell.swift in Sources */,
+				577CC5E3208EBE3700369EF8 /* Flower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,15 +357,13 @@
 		};
 		577CC5E0208EB80400369EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CCC1197BD771826085E852A /* Pods-Hero Practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W465KZUJR6;
 				INFOPLIST_FILE = "Hero Practice/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RobertoEfrainHernandez.Hero-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +373,13 @@
 		};
 		577CC5E1208EB80400369EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB6FEA762E3DADDB967D342 /* Pods-Hero Practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W465KZUJR6;
 				INFOPLIST_FILE = "Hero Practice/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RobertoEfrainHernandez.Hero-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
