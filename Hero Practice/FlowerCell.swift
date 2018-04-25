@@ -20,8 +20,10 @@ class FlowerCell: UICollectionViewCell {
             
             flowerLabel.text = name
             flowerLabel.hero.id = "\(name)_name"
+            flowerLabel.hero.modifiers = [.zPosition(4)]
             flowerImageView.image = flower.image
             flowerImageView.hero.id = "\(name)_image"
+            flowerImageView.hero.modifiers = [.zPosition(2)]
         }
     }
 }

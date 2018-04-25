@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aZI-8w-XxP">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Flowers-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hero_Practice" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,17 +20,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1ii-2w-zin">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="NUV-Bj-dZk">
+                                <rect key="frame" x="0.0" y="231" width="375" height="450"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="hjU-mu-v45"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NUV-Bj-dZk">
                                     <size key="itemSize" width="304" height="450"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="35" minY="0.0" maxX="35" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlowerCell" id="itr-6L-lHN" customClass="FlowerCell" customModule="Hero_Practice" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="142" width="304" height="450"/>
+                                        <rect key="frame" x="35" y="0.0" width="304" height="450"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="304" height="450"/>
@@ -63,7 +66,7 @@
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                    <integer key="value" value="14"/>
+                                                                    <integer key="value" value="25"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
@@ -77,10 +80,10 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="14"/>
+                                                            <integer key="value" value="25"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                            <real key="value" value="0.25"/>
+                                                            <real key="value" value="0.75"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
                                                             <size key="value" width="0.0" height="10"/>
@@ -114,13 +117,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1ii-2w-zin" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0a3-ND-rYZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ii-2w-zin" secondAttribute="trailing" id="7F0-F1-qOh"/>
-                            <constraint firstItem="1ii-2w-zin" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ovr-kd-rRS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1ii-2w-zin" secondAttribute="bottom" id="PQe-GS-4aF"/>
+                            <constraint firstItem="1ii-2w-zin" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hc8-tM-Oij"/>
+                            <constraint firstItem="1ii-2w-zin" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="kD1-xX-7oO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ii-2w-zin" secondAttribute="trailing" id="kxL-IQ-77C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Flowers" id="ITS-Be-heh"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -130,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="116"/>
+            <point key="canvasLocation" x="1010.4" y="115.27093596059113"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="Gnw-Na-SbK">
@@ -143,8 +146,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mcJ-Ef-fDo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpp-ct-uVT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flower Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nf1-44-V5p">
-                                <rect key="frame" x="36" y="351.66666666666669" width="189" height="39"/>
+                                <rect key="frame" x="20" y="351.66666666666669" width="189" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -184,13 +191,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mpp-ct-uVT" secondAttribute="bottom" id="0uP-bf-NKC"/>
                             <constraint firstItem="mcJ-Ef-fDo" firstAttribute="top" secondItem="Gvu-dc-7oL" secondAttribute="top" id="0wW-Ig-cJR"/>
-                            <constraint firstItem="nf1-44-V5p" firstAttribute="leading" secondItem="Gvu-dc-7oL" secondAttribute="leadingMargin" constant="20" id="12g-wA-fVG"/>
+                            <constraint firstItem="nf1-44-V5p" firstAttribute="leading" secondItem="Gvu-dc-7oL" secondAttribute="leading" constant="20" id="12g-wA-fVG"/>
                             <constraint firstItem="7kG-2y-qZi" firstAttribute="top" secondItem="dsY-Ht-HPv" secondAttribute="top" constant="25" id="1s1-JW-0Xl"/>
                             <constraint firstItem="nf1-44-V5p" firstAttribute="centerY" secondItem="Gvu-dc-7oL" secondAttribute="centerY" constant="-35" id="3bJ-gG-UDu"/>
+                            <constraint firstItem="mpp-ct-uVT" firstAttribute="top" secondItem="Gvu-dc-7oL" secondAttribute="top" id="A9Q-4G-iTY"/>
                             <constraint firstItem="7kG-2y-qZi" firstAttribute="leading" secondItem="dsY-Ht-HPv" secondAttribute="leading" constant="25" id="CYs-wO-yn8"/>
                             <constraint firstItem="dsY-Ht-HPv" firstAttribute="trailing" secondItem="mcJ-Ef-fDo" secondAttribute="trailing" id="OtF-FN-bRZ"/>
                             <constraint firstAttribute="bottom" secondItem="mcJ-Ef-fDo" secondAttribute="bottom" id="RqV-sl-2Yq"/>
+                            <constraint firstItem="mpp-ct-uVT" firstAttribute="leading" secondItem="dsY-Ht-HPv" secondAttribute="leading" id="bzO-mb-OaX"/>
+                            <constraint firstItem="dsY-Ht-HPv" firstAttribute="trailing" secondItem="mpp-ct-uVT" secondAttribute="trailing" id="oLn-PO-0E9"/>
                             <constraint firstItem="mcJ-Ef-fDo" firstAttribute="leading" secondItem="dsY-Ht-HPv" secondAttribute="leading" id="wWP-iM-NV0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dsY-Ht-HPv"/>
@@ -206,7 +217,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs7-69-5ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8t0-lm-QYh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="919" y="115"/>
+            <point key="canvasLocation" x="1860" y="114.53201970443351"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ttv-Na-o9N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aZI-8w-XxP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BDk-ae-r8s">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UxN-2j-pYh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q45-HT-C8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="115.27093596059113"/>
         </scene>
     </scenes>
     <resources>
